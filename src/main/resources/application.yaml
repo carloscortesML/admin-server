@@ -1,0 +1,19 @@
+spring:
+  boot:
+    admin:
+      routes:
+        endpoints: '*'
+  security:
+    user:
+      password: 'admin'
+      name: 'admin'
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: 'always'
