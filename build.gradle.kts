@@ -15,7 +15,7 @@ repositories {
     mavenCentral()
 }
 
-extra["springBootAdminVersion"] = "2.4.3"
+extra["springBootAdminVersion"] = "2.3.0"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
@@ -24,6 +24,9 @@ dependencies {
     implementation("de.codecentric:spring-boot-admin-starter-server")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("de.codecentric:spring-boot-admin-starter-server:2.3.0")
+    implementation("de.codecentric:spring-boot-admin-server-ui:2.3.0")
+    implementation("org.springframework.boot:spring-boot-starter-security:2.5.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
